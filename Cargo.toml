@@ -5,4 +5,4 @@ edition = "2021"
 description = "Port Rust dari SnakeD (C++/SFML) menggunakan macroquad"
 
 [dependencies]
-macroquad = "0.4.16"
+macroquad = { version = "0.4.16", features = ["audio"] }
