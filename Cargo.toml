@@ -1,0 +1,8 @@
+[package]
+name = "snaked_neon"
+version = "0.1.0"
+edition = "2021"
+description = "Port Rust dari SnakeD (C++/SFML) menggunakan macroquad"
+
+[dependencies]
+macroquad = "0.4.16"
