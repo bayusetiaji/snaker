@@ -1,6 +1,6 @@
 # SnakeD — Neon Edition (port Rust)
 
-Penulisan ulang **SnakeD** (`D:\exps\cpp\SnakeGames\SnakeD`, C++ + SFML 2.5.1) ke dalam
+Penulisan ulang **SnakeD** (C++ + SFML 2.5.1) ke dalam
 **Rust + [macroquad](https://github.com/not-fl3/macroquad) 0.4.16**.
 
 Seluruh gameplay, tema neon, HUD, layar menu/pause/game over, partikel, screen shake,
@@ -17,7 +17,7 @@ snake/
 │   └── hit.wav
 └── src/
     ├── main.rs             # window conf + ikon + loop (init → update → render)
-    ├── game.rs             # state machine, input, partikel, audio, hiscore, render
+    ├── game.rs             # state machine, input, partikel, audio, high score, render
     ├── snake.rs            # gerak, interpolasi, tabrakan, rendering kepala/mata
     ├── segment.rs          # satu ruas tubuh + interpolasi posisi
     ├── fruit.rs            # apel: animasi, masa hidup 9 detik, rendering
@@ -29,7 +29,7 @@ snake/
 ## Build & jalankan
 
 ```powershell
-cd D:\exps\rust\snake
+cd path\to\project\snake
 cargo build --release
 .\target\release\snaked_neon.exe
 ```
